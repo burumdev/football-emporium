@@ -8,7 +8,8 @@ Match results can be filtered cumulatively and paginated from the VueJs app on t
 # Installing
 
 * The app requires rust build system for the backend and Node + npm build system for the frontend.
-* The build script automatically builds the frontend along with the backend but for the first time an `npm install` in `ui` directory is needed.
+* The build script automatically builds the frontend along with the backend but for the first time, navigate to `ui` directory and run:
+  * `npm install`
 * Make a copy of `.env.example` as `.env`. Contents can stay the same for development environment as there're no secrets in `.env` because we use an internal in-memory database built from scratch with the json file data.
 
 ## License
