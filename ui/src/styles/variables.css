@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --main-bg: rgba(154, 236, 153, 0.1);
+  --item-bg-even: rgba(0, 50, 40, 0.75);
+  --item-bg-odd: rgba(0, 50, 40, 0.50);
+  --fg-lime: #efff7f;
+  --fg-light: #FEFFED;
+  --fg-dark: #2b2b2b;
+  /* Fonts */
+  --font-size-normal: 1.9rem;
+  --font-size-big: 2.2rem;
+  --font-size-huge: 4.2rem;
+  --font-size-smaller: 1.6rem;
+  --font-size-small: 1.2rem;
+  /* Media Query */
+  --desktop-width: 1024px;
+}
+
+.font-size {
+  font-size: var(--font-size-normal);
+}
+.font-size-big {
+  font-size: var(--font-size-big);
+}
+.font-size-smaller {
+  font-size: var(--font-size-smaller);
+}
+.font-size-small {
+  font-size: var(--font-size-small);
+}

@@ -1,0 +1,24 @@
+@import "./styles/variables.css";
+@import "./styles/reset.css";
+
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("/fonts/UbuntuSans.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("/fonts/UbuntuSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+
+* {
+  font-family: Ubuntu;
+}
+
+.invisible {
+  visibility: hidden;
+}
