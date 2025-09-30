@@ -1,5 +1,7 @@
 use std::borrow::Cow;
 
+use anyhow::Context;
+
 #[derive(Clone)]
 pub struct AppEnvVars {
     pub host_address: Cow<'static, str>,
@@ -7,9 +9,14 @@ pub struct AppEnvVars {
     pub fe_dev_origin: Cow<'static, str>,
 }
 
+use crate::constants::ERR_PFX;
+const MOD: &str = "ENVVARS";
+
 impl AppEnvVars {
     pub fn init() -> anyhow::Result<Self> {
-        dotenv::dotenv()?;
+        dotenv::dotenv().with_context(|| {
+            format!("{ERR_PFX} {MOD}: Could not read environment variables from '.env' file.")
+        })?;
 
         Ok(Self {
             host_address: Cow::from(
