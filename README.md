@@ -3,6 +3,8 @@
 Search through football match results from 2010 to 2026 with a web interface. Based on [openfootball](https://github.com/openfootball) json data. Powered by Rust and Axum on the backend and VueJs on the frontend.
 Match results can be filtered cumulatively and paginated from the VueJs app on the frontend.
 
+![Football Emporium](https://github.com/burumdev/football-search-axum-vuejs/blob/main/screenshot.jpg)
+
 # Installing
 
 * The app requires rust build system for the backend and Node + npm build system for the frontend.
