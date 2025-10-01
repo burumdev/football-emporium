@@ -15,7 +15,7 @@ Search through football match results from 2010 to 2026 with a web interface.
   * `npm install`
 * Make a copy of `.env.example` as `.env`. Contents can stay the same for development environment as there're no secrets in `.env` because we use an internal in-memory database built from scratch with the json file data.
 
-# Why not use a prod-ready in memory database library?
+## Why not use a prod-ready in memory database library?
 
 Mainly for practice purposes. I wanted to utilize Rust collection types like `HashMap`, `BTreeMap` in a real-world setting. Otherwise it would be wise to use a well-done system like **SurrealDB**, **TinyDB**, **Redis**, **Postgres** or something similar.
 
